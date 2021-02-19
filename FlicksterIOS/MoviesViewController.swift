@@ -5,6 +5,7 @@
 //  Created by Henry Lao on 2/18/21.
 //
 import UIKit
+import AlamofireImage
 
 class MoviesViewController: UIViewController
                             , UITableViewDataSource, UITableViewDelegate
@@ -18,21 +19,20 @@ class MoviesViewController: UIViewController
         let cell =
             tableView.dequeueReusableCell(withIdentifier:
                                             "MovieTableViewCell") as! MovieTableViewCell
-//        let movie = movies[indexPath.row]
-//        let title = movie["title"] as! String
-//        let overview = movie["overview"] as! String
-//
-//
-//        let baseUrl = ""
-//        let posterPath = movie["poster_path"] as! String
-//        let posterUrl = URL(string: baseUrl + posterPath)
-//        let cell = MovieTableViewCell()
+        
         let movie = movies[indexPath.row]
+      
         let title = movie["title"]
         let overview = movie["overview"]
-        cell.titleLabel.text = title as! String
-        cell.overviewLabel.text = overview as! String
 
+        cell.titleLabel.text = title as? String
+        cell.overviewLabel.text = overview as? String
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        cell.ivPoster.af.setImage(withURL: posterUrl!)
 //        cell.textLabel?.text = title as! String
         return cell
     }

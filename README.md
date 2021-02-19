@@ -36,10 +36,26 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 * IMPORTANT: configure project to use Storyboard as the main UI
 * ensure DEBUG is disabled ie ensure breakpoints are turned off b/c the DEBUG mode is not the usual intelliji UI
 * Outlets are similar to Android's view.findSomeViewVar(R.id.someViewVariable)
+* Swift requires casting of objects -- to what extent? does it only apply to strings, UDTs? what about integers, floats, doubles
 
-In-class Notes:
-* "this class is not key value coding-compliant for the key <insert Obj>"
-* 
+Pod Notes:
+* Usage of pods require opening the xcode project file from the <proj_name>.xcworkspace file instead of the <proj_name>.xcodeproj
+* Initialize the pod
+```sh
+pod init
+```
+* Installing external dependencies
+```sh
+pod install
+```
+* Remove all traces of pods
+1. ```sh
+sudo gem install cocoapods-deintegrate
+```
+2. ```sh
+pod deintegrate
+```
+
 
 Creating a table viewer(Design):
 1. Select [+] from top right
