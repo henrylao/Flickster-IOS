@@ -21,7 +21,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-<img src="https://recordit.co/Z4ioKVOpMv" width=400><br>
+<img src="https://github.com/henrylao/Flickster-IOS/blob/main/docs/flickster-core-req-demo.gif" width=400><br>
 
 ### Notes
 * IOS Swift Storyboard == Android XML
