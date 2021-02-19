@@ -49,11 +49,11 @@ pod init
 pod install
 ```
 * Remove all traces of pods<br>
-    1. 
+1. 
 ```sh
 sudo gem install cocoapods-deintegrate
 ```
-	2. 
+2. 
 ```sh
 pod deintegrate
 ```
