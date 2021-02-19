@@ -35,12 +35,18 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 * Adopt a strict approach when following and using the code when practicing/learning the basics
 * IMPORTANT: configure project to use Storyboard as the main UI
 * ensure DEBUG is disabled ie ensure breakpoints are turned off b/c the DEBUG mode is not the usual intelliji UI
+* Outlets are similar to Android's view.findSomeViewVar(R.id.someViewVariable)
 
 In-class Notes:
 * "this class is not key value coding-compliant for the key <insert Obj>"
 * 
 
-Creating a table viewer:
+Creating a table viewer(Design):
+1. Select [+] from top right
+2. Select table view and resize appropriately 
+3. Do ctrl + drag on table view to the associated controller code
+
+Creating a table viewer(Code):
 1. inherit from the necessary classes: UIViewController, UITableViewDataSource, UITableViewDelegate
 2. Implement the required funcs as a result of inheritance
 3. Implement client fetching of data within the controller viewDidLoad

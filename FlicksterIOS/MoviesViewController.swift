@@ -15,22 +15,25 @@ class MoviesViewController: UIViewController
     @IBOutlet weak var moviesTableView: UITableView!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell =
-//            tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+        let cell =
+            tableView.dequeueReusableCell(withIdentifier:
+                                            "MovieTableViewCell") as! MovieTableViewCell
 //        let movie = movies[indexPath.row]
 //        let title = movie["title"] as! String
 //        let overview = movie["overview"] as! String
 //
-//        cell.titleLabel.text = title
-//        cell.overviewLabel.text = overview
 //
 //        let baseUrl = ""
 //        let posterPath = movie["poster_path"] as! String
 //        let posterUrl = URL(string: baseUrl + posterPath)
-        let cell = UITableViewCell()
+//        let cell = MovieTableViewCell()
         let movie = movies[indexPath.row]
         let title = movie["title"]
-        cell.textLabel?.text = title as! String
+        let overview = movie["overview"]
+        cell.titleLabel.text = title as! String
+        cell.overviewLabel.text = overview as! String
+
+//        cell.textLabel?.text = title as! String
         return cell
     }
 

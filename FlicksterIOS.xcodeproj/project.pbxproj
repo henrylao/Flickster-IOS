@@ -16,6 +16,7 @@
 		DC1A1C3825DF9092002C3C97 /* FlicksterIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1C3725DF9092002C3C97 /* FlicksterIOSTests.swift */; };
 		DC1A1C4325DF9092002C3C97 /* FlicksterIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1C4225DF9092002C3C97 /* FlicksterIOSUITests.swift */; };
 		DC1A1C5425DF973B002C3C97 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1C5325DF973B002C3C97 /* MoviesViewController.swift */; };
+		DC1A1C6525DFB2FA002C3C97 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1C6425DFB2F9002C3C97 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DC1A1C4225DF9092002C3C97 /* FlicksterIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlicksterIOSUITests.swift; sourceTree = "<group>"; };
 		DC1A1C4425DF9092002C3C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC1A1C5325DF973B002C3C97 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		DC1A1C6425DFB2F9002C3C97 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				DC1A1C2025DF9091002C3C97 /* AppDelegate.swift */,
 				DC1A1C2225DF9091002C3C97 /* SceneDelegate.swift */,
 				DC1A1C5325DF973B002C3C97 /* MoviesViewController.swift */,
+				DC1A1C6425DFB2F9002C3C97 /* MovieTableViewCell.swift */,
 				DC1A1C2425DF9091002C3C97 /* ViewController.swift */,
 				DC1A1C2625DF9091002C3C97 /* Main.storyboard */,
 				DC1A1C2925DF9092002C3C97 /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1A1C6525DFB2FA002C3C97 /* MovieTableViewCell.swift in Sources */,
 				DC1A1C2525DF9091002C3C97 /* ViewController.swift in Sources */,
 				DC1A1C2125DF9091002C3C97 /* AppDelegate.swift in Sources */,
 				DC1A1C2325DF9091002C3C97 /* SceneDelegate.swift in Sources */,
