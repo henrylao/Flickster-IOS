@@ -66,3 +66,7 @@ Creating a table viewer(Code):
 2. Implement the required funcs as a result of inheritance
 3. Implement client fetching of data within the controller viewDidLoad
 4. Call reloading of the TableView member variable after the client completes data fetching
+
+Debugging Reminders:
+* utilize print statements to be called within each func -- "sprinkling breadcrumbs"
+* "key-compliant" error due to outlet
