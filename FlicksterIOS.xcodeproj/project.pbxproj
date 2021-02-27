@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		DC1A1C4325DF9092002C3C97 /* FlicksterIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1C4225DF9092002C3C97 /* FlicksterIOSUITests.swift */; };
 		DC1A1C5425DF973B002C3C97 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1C5325DF973B002C3C97 /* MoviesViewController.swift */; };
 		DC1A1C6525DFB2FA002C3C97 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1C6425DFB2F9002C3C97 /* MovieTableViewCell.swift */; };
+		DC973D6E25E9F2D20030C787 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC973D6D25E9F2D20030C787 /* MovieDetailsViewController.swift */; };
 		FC332DBAAD4BA5F089ACDFF0 /* Pods_FlicksterIOS_FlicksterIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC35078073AB5DC74FF9E960 /* Pods_FlicksterIOS_FlicksterIOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		DC1A1C5325DF973B002C3C97 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		DC1A1C6425DFB2F9002C3C97 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		DC35078073AB5DC74FF9E960 /* Pods_FlicksterIOS_FlicksterIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlicksterIOS_FlicksterIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC973D6D25E9F2D20030C787 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +117,6 @@
 				CD89AA36D0F28469456D4F5F /* Pods-FlicksterIOSTests.debug.xcconfig */,
 				3CBE5387079872E56A9F78DE /* Pods-FlicksterIOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,6 +150,7 @@
 				DC1A1C5325DF973B002C3C97 /* MoviesViewController.swift */,
 				DC1A1C6425DFB2F9002C3C97 /* MovieTableViewCell.swift */,
 				DC1A1C2425DF9091002C3C97 /* ViewController.swift */,
+				DC973D6D25E9F2D20030C787 /* MovieDetailsViewController.swift */,
 				DC1A1C2625DF9091002C3C97 /* Main.storyboard */,
 				DC1A1C2925DF9092002C3C97 /* Assets.xcassets */,
 				DC1A1C2B25DF9092002C3C97 /* LaunchScreen.storyboard */,
@@ -415,6 +417,7 @@
 			files = (
 				DC1A1C6525DFB2FA002C3C97 /* MovieTableViewCell.swift in Sources */,
 				DC1A1C2525DF9091002C3C97 /* ViewController.swift in Sources */,
+				DC973D6E25E9F2D20030C787 /* MovieDetailsViewController.swift in Sources */,
 				DC1A1C2125DF9091002C3C97 /* AppDelegate.swift in Sources */,
 				DC1A1C2325DF9091002C3C97 /* SceneDelegate.swift in Sources */,
 				DC1A1C5425DF973B002C3C97 /* MoviesViewController.swift in Sources */,

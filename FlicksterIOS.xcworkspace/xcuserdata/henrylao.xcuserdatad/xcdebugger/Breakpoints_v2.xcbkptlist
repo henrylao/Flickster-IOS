@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3E1880A2-18CB-4693-A790-3FA0805B1CD1"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9273CB2F-A363-47D2-8236-7B2BDFEB7A8B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FlicksterIOS/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "SceneDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9273CB2F-A363-47D2-8236-7B2BDFEB7A8B - 74fc3c5aec64c12a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlicksterIOS.SceneDelegate.__deallocating_deinit"
+                  moduleName = "FlicksterIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrylao/github/FlicksterIOS/FlicksterIOS/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "9273CB2F-A363-47D2-8236-7B2BDFEB7A8B - 19254cb1e8e2e875"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlicksterIOS.SceneDelegate.__allocating_init() -&gt; FlicksterIOS.SceneDelegate"
+                  moduleName = "FlicksterIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrylao/github/FlicksterIOS/FlicksterIOS/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "9273CB2F-A363-47D2-8236-7B2BDFEB7A8B - 2d34e346426f8f99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlicksterIOS.SceneDelegate.init() -&gt; FlicksterIOS.SceneDelegate"
+                  moduleName = "FlicksterIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henrylao/github/FlicksterIOS/FlicksterIOS/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
