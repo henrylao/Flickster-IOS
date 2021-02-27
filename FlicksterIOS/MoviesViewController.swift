@@ -10,37 +10,8 @@ import AlamofireImage
 class MoviesViewController: UIViewController
                             , UITableViewDataSource, UITableViewDelegate
 {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count;
-    }
+    
     @IBOutlet weak var moviesTableView: UITableView!
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell =
-            tableView.dequeueReusableCell(withIdentifier:
-                                            "MovieTableViewCell") as! MovieTableViewCell
-        
-        let movie = movies[indexPath.row]
-      
-        let title = movie["title"]
-        let overview = movie["overview"]
-
-        cell.titleLabel.text = title as? String
-        cell.overviewLabel.text = overview as? String
-        
-        let baseUrl = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie["poster_path"] as! String
-        let posterUrl = URL(string: baseUrl + posterPath)
-        
-        cell.ivPoster.af.setImage(withURL: posterUrl!)
-//        cell.textLabel?.text = title as! String
-        return cell
-    }
-
-    func tableView (_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
     var movies = [[String:Any]]()
     
     override func viewDidLoad() {
@@ -73,6 +44,34 @@ class MoviesViewController: UIViewController
         print("After request")
     }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count;
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell =
+            tableView.dequeueReusableCell(withIdentifier:
+                                            "MovieTableViewCell") as! MovieTableViewCell
+        
+        let movie = movies[indexPath.row]
+      
+        let title = movie["title"]
+        let overview = movie["overview"]
+
+        cell.titleLabel.text = title as? String
+        cell.overviewLabel.text = overview as? String
+        
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
+        cell.ivPoster.af.setImage(withURL: posterUrl!)
+//        cell.textLabel?.text = title as! String
+        return cell
+    }
+
+    func tableView (_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

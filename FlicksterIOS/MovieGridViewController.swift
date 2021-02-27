@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import AlamofireImage
 
-class MovieGridViewController: UIViewController {
+class MovieGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+   
 
+    @IBOutlet var moviesCollectionView: UICollectionView!
     var movies = [[String:Any]]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        moviesCollectionView.delegate = self
+        moviesCollectionView.dataSource = self
         // Do any additional setup after loading the view.
         let url = URL(string: "https://api.themoviedb.org/3/movie/297762/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -26,6 +30,7 @@ class MovieGridViewController: UIViewController {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 self.movies = dataDictionary["results"] as! [[String:Any]]
                 print(self.movies)
+                self.moviesCollectionView.reloadData()
               // TODO: Get the array of movies
               // TODO: Store the movies in a property to use elsewhere
               // TODO: Reload your table view data
@@ -34,6 +39,26 @@ class MovieGridViewController: UIViewController {
         }
         task.resume()
         print("After request")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // 1. Create cell
+        let cell = moviesCollectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCell", for: indexPath) as! MovieGridCell
+        // 2. Configure cell
+        let movie = movies[indexPath.item] //
+
+        let baseUrl = "https://image.tmdb.org/t/p/w185" // how to better manage the url path extensions?
+        let posterPath = movie["poster_path"] as! String
+        let posterUrl = URL(string: baseUrl + posterPath)
+
+        cell.ivPoster.af_setImage(withURL: posterUrl!)
+//        cell.sizeToFit()
+        // 3. Return cell for use
+        return cell
     }
     
 
