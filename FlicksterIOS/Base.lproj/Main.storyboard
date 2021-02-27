@@ -135,11 +135,11 @@
             </objects>
             <point key="canvasLocation" x="-407" y="1203"/>
         </scene>
-        <!--Movie Grid View Controller-->
+        <!--Superhero-->
         <scene sceneID="VZv-M8-Hhy">
             <objects>
                 <viewController id="PkU-oW-uxB" customClass="MovieGridViewController" customModule="FlicksterIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="7lM-mN-UQZ"/>
+                    <navigationItem key="navigationItem" title="Superhero" id="7lM-mN-UQZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKP-ty-T9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,8 +155,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Tm3-kb-BqN" kind="relationship" relationship="viewControllers" id="cz8-aJ-YOZ"/>
                         <segue destination="bE9-4N-OJ9" kind="relationship" relationship="viewControllers" id="wbA-3O-Z5G"/>
+                        <segue destination="Tm3-kb-BqN" kind="relationship" relationship="viewControllers" id="cz8-aJ-YOZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czd-GC-stL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
