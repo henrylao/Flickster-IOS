@@ -38,6 +38,8 @@ Describe any challenges encountered while building the app.
 ### App Walkthrough GIF
 
 <img src="https://github.com/henrylao/Flickster-IOS/blob/main/docs/flickster-core-req-demo.gif" width=400><br>
+<img src="https://github.com/henrylao/Flickster-IOS/blob/main/docs/demo-my-iphone.gif" width=400><br>
+
 
 ### Notes
 * IOS Swift Storyboard == Android XML
